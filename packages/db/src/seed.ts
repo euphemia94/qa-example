@@ -22,18 +22,6 @@ async function seedTasks(input: { count: number | null }) {
   }
 }
 
-function _seedPosts(_input: { count: number }) {
-  // TODO: Implement this function
-}
-
-function _seedUsers(_input: { count: number }) {
-  // TODO: Implement this function
-}
-
-function _seedComments(_input: { count: number }) {
-  // TODO: Implement this function
-}
-
 async function runSeed() {
   console.log("⏳ Running seed...");
 

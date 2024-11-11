@@ -53,3 +53,8 @@ dist/
 
 # misc
 .idea/
+
+# Playwright
+**/test-results/
+**/playwright-report/
+**/playwright/.cache/

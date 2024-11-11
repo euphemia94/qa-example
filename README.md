@@ -5,7 +5,7 @@ Welcome to our coding interview exercise! This task is designed to evaluate your
 
 ## Evaluation Criteria
 
-Your performance will be evaluated based on:
+Your performance will be evaluated based on (by order of importance):
 1. The tasks you manage to deliver
 2. The quality and manner of delivery
 3. Your ability to test and debug errors
@@ -21,35 +21,50 @@ We will dig into the details, so make sure your work is thorough and well-though
 
 ## Tasks
 
-The exercise repository is similar to the architecture we use internally at Nexits. We deal extensively with tables and aim to deliver the best possible experience to our users. This exercise reflects that spirit. You'll 
-have to understand the existing codebase, and consult the documentation of the tools used to complete the tasks.
+The exercise repository is similar to the architecture we use internally at Nexits. We deal extensively with tables and aim to deliver the best possible experience to our users. This exercise reflects that spirit. You'll have to understand the existing codebase, and consult the documentation of the tools used to complete the tasks.
 
 ### Main Task
 
-1. Add a new page `/posts` that displays a Post table.
-2. The Post table should show the following columns:
-   - Title
-   - Status
-   - Creation date
-   - Author name
-   - Number of comments
-3. Implement filtering and sorting functionality for all columns.
-4. Figure out how to add the posts schema and generate seed data.
-5. Ensure that the new Post table maintains the same functionality as the existing Tasks table.
+1. Create a test plan document that outlines:
+   - Key functionality to be tested in the Tasks table
+   - Test scenarios for filtering, sorting, and CRUD operations
+   - Edge cases and boundary conditions
+   - Performance considerations
 
-### Extra Tasks (Optional)
 
-These tasks are not required but will give you an edge against other candidates:
+> [!TIP]
+> 
+> You are free to choose any test scenarios you deem necessary based on your analysis of the application. The list below provides some examples of what could be included:
+> 
+> - Table pagination and data loading
+> - Filter combinations across multiple columns
+> - Sort order verification for each column
+> - Date range filtering accuracy
+> - Form validation and error handling
+> - Accessibility compliance
+> - Mobile responsiveness
 
-1. Make the data table interface more abstract and use tRPC server calls instead.
-2. There are some hidden errors and bad practices within the code. Can you find and fix them?
+3. Identify and document bugs/issues you discover in the application.
 
+4. Create detailed bug reports containing:
+   - Steps to reproduce
+   - Expected vs actual behavior
+   - Environment details
+   - Screenshots/recordings
+   - Severity assessment
+
+5. Submit findings in a structured markdown document:
+   - Executive summary
+   - Test coverage report
+   - Bug/issue catalog
+   - Recommendations for improvements
+   - Test evidence and artifacts
+   
 ## How to Submit
 
 1. Clone (do not fork) the project.
 2. Push your copy to your GitHub account.
 3. Make the changes and open Pull Requests (PRs). Do not merge them yet!
-   - You can use a stacked PRs approach to split tasks if you prefer.
 4. Once you're ready, email us the link to your PRs as a response to the email you received containing this exercise.
 5. Make sure the repository is not set to private.
 
@@ -112,6 +127,16 @@ You can now explore the db using `pnpm db:studio` or any other database client o
 ```bash
 pnpm dev
 ```
+
+9. Install and configure Playwright
+
+```bash
+pnpm exec playwright install
+```
+
+> [!NOTE]
+> You can edit the Playwright configuration in `playwright.config.ts` to suit your needs, such as adjusting timeouts, browser settings, or test parallelization.
+
 
 ### Having problems?
 

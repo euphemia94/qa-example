@@ -35,9 +35,17 @@
       "cache": false,
       "interactive": true
     },
+    "seed": {
+      "cache": false,
+      "interactive": false
+    },
     "studio": {
       "cache": false,
       "persistent": true
+    },
+    "test:e2e": {
+      "cache": false,
+      "interactive": false
     },
     "ui-add": {
       "cache": false,
