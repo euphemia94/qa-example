@@ -1,0 +1,81 @@
+﻿TEST PLAN FOR NEXITS TASK TABLE 
+1. Title
+Test Plan for Tasks Table Functionality and Performance Testing
+2. Scope
+2.1 In-Scope
+* Functional testing of the Tasks table across all pages (1-10).
+* Verifying CRUD operations (Create, Read, Update, Delete).
+* Testing filtering, sorting, pagination, and performance.
+* Accessibility and responsiveness validation for the entire table.
+2.2 Out-of-Scope
+* Features or functionality outside the Tasks table.
+* Backend system performance outside the table interaction.
+3. Objective
+To ensure the Tasks table delivers an optimal user experience by verifying key functionalities such as CRUD operations, filtering, sorting, and pagination across pages 1-10. The aim is to identify and document any defects or performance issues, ensuring the application meets quality standards.
+4. Key Functionality to be Tested
+4.1 CRUD Operations
+* Create, view, edit, and delete tasks across all pages.
+* Validation for required fields during task creation and updates.
+4.2 Filtering
+* Applying filters by task attributes like status, priority, createdAt, etc.
+* Verifying the accuracy of filter results across multiple columns.
+4.3 Sorting
+* Ensuring sorting works correctly by createdAt, priority, and other sortable columns.
+* Testing ascending and descending sort orders.
+4.4 Pagination
+* Navigating between pages 1 to 10 and validating displayed data.
+* Ensuring filters and sorting persist across pagination.
+4.5 Performance
+* Assessing load times for pages 1-10.
+* Testing responsiveness during simultaneous user interactions.
+4.6 Accessibility and Responsiveness
+* Testing screen reader compatibility and keyboard navigation.
+* Ensuring the table adjusts correctly on mobile devices.
+5.0 Test Methodology
+* Functional Testing: To verify the functionality of the Tasks table, including CRUD operations, sorting, filtering, and pagination.
+* Boundary Testing: To test edge cases, such as the first and last page or invalid data inputs.
+* Performance Testing: To measure page load time and API response times during CRUD operations and ensure responsiveness.
+* Exploratory Testing: To uncover hidden issues by interacting with the table beyond predefined test scenarios.
+6. Test Scenarios
+6.1 CRUD Operations
+1. Create a new task with valid data.
+2. Attempt to create a task with missing required fields.
+3. Edit an existing task and validate changes on reload.
+4. Delete a task and ensure it no longer appears in the table.
+5. Validate error messages for invalid inputs.
+6.2 Filtering
+1. Filter tasks by status and validate displayed results.
+2. Apply a date range filter and verify results.
+3. Combine multiple filters and check the outcome.
+4. Test invalid filter inputs and ensure appropriate error handling.
+6.3 Sorting
+1. Sort the table by createdAt (ascending and descending).
+2. Sort by priority and ensure stability with identical values.
+3. Validate sorting consistency across paginated pages.
+6.4 Pagination
+1. Navigate to pages 2, 5, and 10 and verify data accuracy.
+2. Validate item counts per page.
+3. Combine pagination with filtering and sorting.
+6.5 Performance
+1. Measure the time taken to load pages.
+2. Access responsiveness to changes made (eg create new task, update, delete etc).
+5.6 Accessibility and Responsiveness
+1. Validate keyboard navigation for CRUD operations.
+2. Test responsiveness on developer console 
+7. Edge Cases
+1. Attempt to load a non-existent page (e.g., page 11).
+2. Sort table with invalid date
+3. Apply invalid format titles
+4. Sort a column with identical values.
+7.0 Duration One week (7 days)
+Breakdown:
+* Day 1–2: Familiarization with the system, defining test scenarios, and preparing test data.
+* Day 3–5: Execution of functional, boundary, and performance test cases.
+* Day 6: Documentation of bugs/issues and test evidence.
+* Day 7: Report compilation, including recommendations and artifacts
+Test Deliverables
+The following deliverables will be submitted at the end of the testing cycle:
+1. Test Plan Document.
+2. Test Case Document.
+3. Bug Report.
+4. Test Summary Report.

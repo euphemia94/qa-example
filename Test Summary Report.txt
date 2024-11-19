@@ -1,0 +1,85 @@
+﻿Test Summary Report
+Executive Summary
+The test execution was conducted for the "Tasks Table" feature to ensure its functionality, usability, and performance align with the business requirements. A total of 26 test cases were executed, covering CRUD operations, filtering, sorting, pagination, and performance. Out of these, 20 test cases passed, and 6 failed.
+Test Execution Summary
+Category
+	Test Cases Executed
+	Passed
+	Failed
+	Pass Percentage
+	CRUD Operations
+	10
+	7
+	3
+	70%
+	Filtering
+	5
+	3
+	2
+	60%
+	Sorting
+	2
+	2
+	0
+	100%
+	Pagination
+	4
+	3
+	1
+	75%
+	Performance
+	2
+	1
+	1
+	50%
+	Accessibility & Others
+	2
+	2
+	0
+	100%
+	Total
+	26
+	20
+	6
+	78%
+	Key Observations
+* CRUD operations showed issues related to missing validation and table responsiveness post-operations.
+* Filtering encountered functionality gaps when combining multiple filters and handling invalid input formats.
+* Pagination lacked feedback for navigation to non-existent pages.
+* Performance concerns arose as the table became unresponsive post-CRUD operations without a refresh.
+Bug Summary
+Bug ID
+	Title
+	Severity
+	Status
+	TC-1.4
+	Missing field validation during task creation
+	Major
+	Open
+	TC-1.6
+	Invalid data type handling during task creation
+	Major
+	Open
+	TC-1.9
+	Task update with missing field validation
+	Major
+	Open
+	TC-2.2
+	Task creation with existing title
+	Moderate
+	Open
+	TC-3.3
+	Invalid filter inputs produce no error message
+	Moderate
+	Open
+	TC-6.2
+	Table unresponsive after CRUD operations without refresh
+	Critical
+	Open
+	Recommendations
+1. Fix validation issues in task creation and updating to ensure proper error handling.
+2. Address unresponsive behavior of the table post-CRUD operations to improve usability.
+3. Enhance filtering functionality to handle invalid inputs and multiple filters effectively.
+4. Improve pagination with user feedback for navigation to non-existent pages.
+Conclusion
+With a 76% pass rate, critical and major issues identified need to be addressed to meet functionality and performance expectations. The results will guide the development team to enhance the system’s reliability and user experience.
